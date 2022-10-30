@@ -59,12 +59,14 @@ function App() {
               <div className='App-wrapper'>
                 <Card date={data?.dg} time={data?.hg} voteCounting={data?.psi} type={"apuração"} />
               </div>
-              <div ref={imageRef} className='App-wrapper'>
+              <div className='App-wrapper'>
                 <Confetti />
-                <ResultPresident voteCounting={"100"} percent={{
-                  lula: data?.cand.filter(i => i.nm === "LULA")[0]?.pvap,
-                  bolsonaro: data?.cand.filter(i => i.nm === "JAIR BOLSONARO")[0]?.pvap
-                }} />
+                <div ref={imageRef}>
+                  <ResultPresident voteCounting={"100"} percent={{
+                    lula: data?.cand.filter(i => i.nm === "LULA")[0]?.pvap,
+                    bolsonaro: data?.cand.filter(i => i.nm === "JAIR BOLSONARO")[0]?.pvap
+                  }} />
+                </div>
               </div>
           </>
         }
