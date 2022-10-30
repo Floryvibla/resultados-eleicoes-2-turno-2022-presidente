@@ -19,7 +19,7 @@ function ResultPresident({ percent, voteCounting }) {
               ? <div style={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
                   <Avatar percent={percent?.lula} type="lula" />
                   <span
-                    style={{fontSize: 18, marginTop: 30, fontWeight: "bold"}}
+                    style={{fontSize: 18, marginTop: 30, fontWeight: "bold", textAlign: "center", padding: "0px 20px"}}
                   >
                     Lula vence eleição para ser o 39º presidente do Brasil
                   </span>
