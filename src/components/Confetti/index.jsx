@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from 'react-lottie';
-import animationData from '../lotties/confetti.json';
+import animationData from '../lotties/confetti2.json';
 
 function Confetti() {
 

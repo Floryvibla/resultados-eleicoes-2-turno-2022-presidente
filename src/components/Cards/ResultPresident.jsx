@@ -16,7 +16,14 @@ function ResultPresident({ percent, voteCounting }) {
         <div className='wrapper-avatar'>
           {voteCounting == "100" 
             ? parseFloat(percent?.lula.replace(',', ".")) > parseFloat(percent?.bolsonaro.replace(',', "."))
-              ? <Avatar percent={percent?.lula} type="lula" /> : <Avatar percent={percent?.bolsonaro} type="bolsonaro" />
+              ? <div style={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+                  <Avatar percent={percent?.lula} type="lula" />
+                  <span
+                    style={{fontSize: 18, marginTop: 30, fontWeight: "bold"}}
+                  >
+                    Lula vence eleição para ser o 39º presidente do Brasil
+                  </span>
+              </div> : <Avatar percent={percent?.bolsonaro} type="bolsonaro" />
             : <>
                 <Avatar percent={percent?.lula} type="lula" />
                 <span>VS</span>

@@ -1,11 +1,12 @@
 import React from 'react'
+import imgLula from '../../assets/lula.jpeg'
 
 function Avatar({ type, percent=30 }) {
   return (
     <div className='avatar'>
         <img 
             src={type === "lula"
-                ? "https://resultados.tse.jus.br/oficial/ele2022/545/fotos/br/280001607829.jpeg"
+                ? imgLula
                 : "https://resultados.tse.jus.br/oficial/ele2022/545/fotos/br/280001618036.jpeg"
             }
             style={{width: "100%", height: "100%", objectFit: "cover", borderRadius: "100%", objectPosition: type === "lula" ? "0px 30%" : "0px 10%"}}
